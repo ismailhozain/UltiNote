@@ -2,7 +2,9 @@ import Link from 'next/link'
 import React from 'react'
 import {Layout, Menu} from 'antd'
 import {
-    UserOutlined
+    UserOutlined,
+    MenuOutlined,
+
 } from '@ant-design/icons'
 
 const {Header} = Layout
@@ -13,14 +15,19 @@ class HomePage extends React.Component {
     return(
         <Layout>
             <Menu style = {styles.nav}>
-                <Menu.Item key = 'alipay'>
+                <Menu.Item>
+                    <Link href = '/'>
+                        <a style = {styles.sideBar}><MenuOutlined style={{fontSize: '30px'}}/></a>
+                    </Link>
+                </Menu.Item>
+                <Menu.Item>
                     <Link href = '/'>
                         <a>UltiNote</a>
                     </Link>
                 </Menu.Item>
-                <Menu.Item key = 'alipay'>
+                <Menu.Item>
                     <Link href = '/'>
-                        <a style = {styles.pfp}><UserOutlined width = '200px'/></a>
+                        <a style = {styles.pfp}><UserOutlined style={{fontSize: '30px'}}/></a>
                     </Link>
                 </Menu.Item>
             </Menu>
@@ -50,7 +57,20 @@ const styles = {
         display: 'inline-block',
         float: 'right',
         width: '30px',
-        border: '3px solid #73AD21',
+        border: '2px solid rgba(124,132,113,1)',
+        borderRadius: '32px',
         padding: '10px',
     },
+    sideBar: {
+        display: 'inline-block',
+        float: 'left',
+        width: 'auto',
+        border: '2px solid rgba(124,132,113,1)',
+        borderRadius: '8px',
+        padding: '10px',
+    },
+    title: {
+
+    }
 }
+
