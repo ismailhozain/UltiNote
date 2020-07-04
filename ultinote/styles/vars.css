@@ -18,11 +18,18 @@
   text-align: center;
 }
 .navbar {
-  border-bottom: black solid 2px;
   height: 6vh;
 }
 
 .navbutton {
   border: none;
-  height: available;
+  height: 5vh;
+  background-color: white;
+  outline: none;
+
 }
+
+.toggledOn {
+  background-color: brown;
+}
+
