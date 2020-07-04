@@ -3,3 +3,26 @@
   --primaryColor: #191a1b;
   --textColorSecondary: rgba(0, 0, 0, 0.45);
 }
+.notepadArea {
+  border: none;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  width: 100vw;
+  height: 90vh;
+  display: inline-block;
+
+}
+
+.notepadContainer {
+  text-align: center;
+}
+.navbar {
+  border-bottom: black solid 2px;
+  height: 6vh;
+}
+
+.navbutton {
+  border: none;
+  height: available;
+}
