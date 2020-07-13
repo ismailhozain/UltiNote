@@ -54,7 +54,7 @@ class HomePage extends React.Component {
                             <a>UltiNote</a>
                         </Link>
                     </Col>
-                    <Col span={1} offset={19}>
+                    <Col span={2} offset={19}>
                         <Menu>
                             <SubMenu key="sub1" icon={<UserOutlined style={{fontSize: '30px'}}/>} title="User">
                                 <Menu.Item key="3">Tom</Menu.Item>
